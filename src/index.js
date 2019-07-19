@@ -3,7 +3,7 @@ const { METHODS } = require('http');
 
 const URL = require('url');
 
-const qs = require('querystring');
+const qs = require('qs');
 
 const Layer = require('./layer');
 
@@ -35,7 +35,6 @@ class TydRouter {
           try {
             layer.handler(req, res, next);
           } catch (e) {
-            console.log('eeee', e);
             /* eslint no-unused-expressions:0 */
             typeof callback === 'function' && callback(e);
           }

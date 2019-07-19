@@ -1,7 +1,7 @@
 
 const assert = require('assert');
-const TypRouter = require('./index');
-const axios = require('axios');
+const TypRouter = require('../src');
+const axios = require('axios/index');
 const http = require('http');
 const author = 'combinelee';
 let typRouter = undefined;
